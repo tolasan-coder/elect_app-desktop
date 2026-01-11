@@ -6,8 +6,8 @@ const { app, BrowserWindow } = require("electron");
 function createWindow() {
   // BrowserWindow options: set the initial size and web preferences
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
     webPreferences: {
       // Enable Node integration for renderer (gives access to Node.js APIs in web pages).
       // NOTE: Enabling `nodeIntegration` can be a security risk for untrusted content.

@@ -1,0 +1,72 @@
+:root {
+  --bg-primary: #f9fafb;
+  --bg-secondary: rgba(255, 255, 255, 0.75);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border: rgba(229, 231, 235, 0.6);
+  --accent: #5abb8b;
+  --accent-hover: #5abb8b;
+}
+
+[data-bs-theme="dark"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: rgba(15, 23, 42, 0.85);
+  --card-bg: rgba(30, 41, 59, 0.9);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --border: rgba(148, 163, 184, 0.15);
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg-primary));
+  color: var(--text-primary);
+}
+
+header,
+aside {
+  background: var(--bg-secondary);
+  backdrop-filter: blur(16px);
+  border-color: var(--border);
+}
+
+.btn-theme {
+  background-color: var(--bg-primary) !important;
+}
+.card-custom {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+}
+
+.sidebar-link {
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background: rgba(99, 241, 170, 0.1);
+  color: var(--accent-hover);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border: none;
+}
+.btn-primary:hover {
+  background: #11b059;
+  /* color: var(--accent-hover); */
+}
+
+.sidebar-link.active {
+  background: rgba(56, 234, 163, 0.221);
+  color: var(--accent);
+  font-weight: 600;
+}

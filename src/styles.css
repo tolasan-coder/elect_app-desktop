@@ -33,6 +33,18 @@ aside {
 .btn-theme {
   background-color: var(--bg-primary) !important;
 }
+/* form-select*/
+.form-select {
+  background-color: var(--border);
+  
+}
+/* btn-group */
+
+.btn-group {
+  border-radius: 24px;
+  overflow: hidden;
+  /* border: 1px solid var(--text-primary); */
+}
 .card-custom {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -70,3 +82,4 @@ aside {
   color: var(--accent);
   font-weight: 600;
 }
+
